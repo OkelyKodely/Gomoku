@@ -45,6 +45,19 @@ public class Go extends JPanel implements MouseListener {
             g.drawLine(i*40, 0, i*40, 760);
         }
         g.drawLine(759, 0, 759, 760);
+
+        for(int i=0; i<19; i++) {
+            for(int j=0; j<19; j++) {
+                if(board[i][j].equals("white")) {
+                    g.setColor(Color.WHITE);
+                    g.fillOval(j*40, i*40, 40, 40);
+                }
+                else if(board[i][j].equals("black")) {
+                    g.setColor(Color.BLACK);
+                    g.fillOval(j*40, i*40, 40, 40);
+                }
+            }
+        }
     }
     
     @Override
