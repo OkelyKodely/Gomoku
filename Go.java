@@ -33,18 +33,18 @@ public class Go extends JPanel implements MouseListener {
     
     public void paint(Graphics g) {
 
-        g.setColor(Color.lightGray);
+        g.setColor(new Color(200,150,55));
         g.fillRect(0, 0, 760, 760);
         
         g.setColor(Color.BLACK);
         for(int i=0; i<19; i++) {
             g.drawLine(0, i*40, 760, i*40);
         }
-        g.drawLine(0, 760, 760, 760);
+        g.drawLine(0, 759, 760, 759);
         for(int i=0; i<19; i++) {
             g.drawLine(i*40, 0, i*40, 760);
         }
-        g.drawLine(760, 0, 760, 760);
+        g.drawLine(759, 0, 759, 760);
     }
     
     @Override
@@ -221,21 +221,24 @@ public class Go extends JPanel implements MouseListener {
     }
     
     void setGUI() {
+        
+        j.setTitle("Go");
+        
         j.setLayout(null);
         
         j.setBounds(0, 0, 1600, 950);
         
         JPanel pp = new JPanel();
         pp.setLayout(null);
-        pp.setBackground(Color.white);
+        pp.setBackground(Color.WHITE);
         pp.setBounds(j.getBounds());
         
         this.setBounds(40, 40, 760, 760);
         
         pp.add(this);
         
-        JButton b = new JButton("New");
-        b.setBounds(40, 10, 80, 20);
+        JButton b = new JButton("New Game.");
+        b.setBounds(40, 10, 123, 20);
         pp.add(b);
         b.addMouseListener(this);
         
