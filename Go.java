@@ -109,7 +109,7 @@ public class Go extends JPanel implements MouseListener {
                         if(board[j][i+2].equals("white")) {
                             if(board[j][i+3].equals("white")) {
                                 if(board[j][i+4].equals("white")) {
-                                    JOptionPane.showMessageDialog(null, "WHITE wins!");
+                                    JOptionPane.showMessageDialog(null, "WHITE wins! - 백 이김!");
                                     initBoard();
                                     repaint();
                                     turn = "white";
@@ -123,7 +123,7 @@ public class Go extends JPanel implements MouseListener {
                         if(board[j+2][i].equals("white")) {
                             if(board[j+3][i].equals("white")) {
                                 if(board[j+4][i].equals("white")) {
-                                    JOptionPane.showMessageDialog(null, "WHITE wins!");
+                                    JOptionPane.showMessageDialog(null, "WHITE wins! - 백 이김!");
                                     initBoard();
                                     repaint();
                                     turn = "white";
@@ -137,7 +137,7 @@ public class Go extends JPanel implements MouseListener {
                         if(board[j+2][i-2].equals("white")) {
                             if(board[j+3][i-3].equals("white")) {
                                 if(board[j+4][i-4].equals("white")) {
-                                    JOptionPane.showMessageDialog(null, "WHITE wins!");
+                                    JOptionPane.showMessageDialog(null, "WHITE wins! - 백 이김!");
                                     initBoard();
                                     repaint();
                                     turn = "white";
@@ -151,7 +151,7 @@ public class Go extends JPanel implements MouseListener {
                         if(board[j+2][i+2].equals("white")) {
                             if(board[j+3][i+3].equals("white")) {
                                 if(board[j+4][i+4].equals("white")) {
-                                    JOptionPane.showMessageDialog(null, "WHITE wins!");
+                                    JOptionPane.showMessageDialog(null, "WHITE wins! - 백 이김!");
                                     initBoard();
                                     repaint();
                                     turn = "white";
@@ -165,7 +165,7 @@ public class Go extends JPanel implements MouseListener {
                         if(board[j][i+2].equals("black")) {
                             if(board[j][i+3].equals("black")) {
                                 if(board[j][i+4].equals("black")) {
-                                    JOptionPane.showMessageDialog(null, "BLACK wins!");
+                                    JOptionPane.showMessageDialog(null, "BLACK wins! - 흑 이김!");
                                     initBoard();
                                     repaint();
                                     turn = "white";
@@ -179,7 +179,7 @@ public class Go extends JPanel implements MouseListener {
                         if(board[j+2][i].equals("black")) {
                             if(board[j+3][i].equals("black")) {
                                 if(board[j+4][i].equals("black")) {
-                                    JOptionPane.showMessageDialog(null, "BLACK wins!");
+                                    JOptionPane.showMessageDialog(null, "BLACK wins! - 흑 이김!");
                                     initBoard();
                                     repaint();
                                     turn = "white";
@@ -193,7 +193,7 @@ public class Go extends JPanel implements MouseListener {
                         if(board[j+2][i-2].equals("black")) {
                             if(board[j+3][i-3].equals("black")) {
                                 if(board[j+4][i-4].equals("black")) {
-                                    JOptionPane.showMessageDialog(null, "BLACK wins!");
+                                    JOptionPane.showMessageDialog(null, "BLACK wins! - 흑 이김!");
                                     initBoard();
                                     repaint();
                                     turn = "white";
@@ -207,7 +207,7 @@ public class Go extends JPanel implements MouseListener {
                         if(board[j+2][i+2].equals("black")) {
                             if(board[j+3][i+3].equals("black")) {
                                 if(board[j+4][i+4].equals("black")) {
-                                    JOptionPane.showMessageDialog(null, "BLACK wins!");
+                                    JOptionPane.showMessageDialog(null, "BLACK wins! - 흑 이김!");
                                     initBoard();
                                     repaint();
                                     turn = "white";
@@ -222,7 +222,7 @@ public class Go extends JPanel implements MouseListener {
     
     void setGUI() {
         
-        j.setTitle("Go");
+        j.setTitle("Go - 오목");
         
         j.setLayout(null);
         
@@ -237,8 +237,8 @@ public class Go extends JPanel implements MouseListener {
         
         pp.add(this);
         
-        JButton b = new JButton("New Game.");
-        b.setBounds(40, 10, 123, 20);
+        JButton b = new JButton("New Start. - 새로 시작");
+        b.setBounds(40, 10, 163, 20);
         pp.add(b);
         b.addMouseListener(this);
         
