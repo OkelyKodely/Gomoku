@@ -1,2 +1,2 @@
-# go
-go in java
+# Gomoku
+Gomoku in java
